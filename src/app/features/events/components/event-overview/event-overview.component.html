@@ -1,0 +1,21 @@
+<div class="wrapper-overview" *ngIf="event; else elseBlock">
+  <div class="main-content">
+    <h1>{{ event?.title }}</h1>
+    <img [src]="event?.imageUrl" [alt]="event?.title" />
+  </div>
+
+  <div class="container">
+    <br />
+    <h1>{{ event?.date }}</h1>
+    <p>
+      Organizer: {{ event.organizatorFirstName + ' ' + event.organizatorLastName}}
+    </p>
+
+    <p>
+      {{ event?.description }}
+    </p>
+  </div>
+</div>
+<ng-template #elseBlock>
+  <app-not-found text="ERROR, Event DOES NOT EXIST"></app-not-found
+></ng-template>

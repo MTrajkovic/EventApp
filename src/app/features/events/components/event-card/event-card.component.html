@@ -1,0 +1,17 @@
+<div class="wrapper">
+  <div class="main-content">
+    <div class="img-pointer">
+      <img [routerLink]="['/events', event.id]" [src]="event.imageUrl " />
+    </div>
+    <div class="container">
+      <button [routerLink]="['/events', event.id]">{{ event.title }}</button><br />
+      <p>
+        Date: {{ event.date | date:'medium'}}
+      </p>
+      <p>
+        Organizer: {{ event.organizatorFirstName + ' ' + event.organizatorLastName}}
+      </p>
+      <p class="description">{{ event.description | descriptionLimit }}</p>
+    </div>
+  </div>
+</div>

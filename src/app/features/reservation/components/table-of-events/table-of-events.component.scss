@@ -1,0 +1,72 @@
+@import "../../../../../styles/variables";
+table,
+tr,
+td {
+  padding: 10px !important;
+  background-color: #29374b;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+}
+table {
+  border-radius: 10px;
+}
+
+th.mat-header-cell {
+  padding: 10px;
+  text-align:center;
+}
+
+.wrapper-pagination {
+  background-color: $blue-color;
+  .mat-select-value-text,
+  .mat-select-arrow,
+  .mat-select-min-line {
+    color: $blue-color !important;
+  }
+}
+
+.mat-paginator-page-size-select {
+  background: transparent;
+  color: $blue-color;
+}
+
+.th.mat-header-cell:first-of-type,
+td.mat-cell:first-of-type,
+td.mat-footer-cell:first-of-type {
+  font-size: 30px;
+}
+
+button {
+  border: none;
+  text-decoration: underline;
+  background-color: $blue-color-hover;
+  color: $blue-color;
+  padding: 5px 10px;
+  cursor: pointer;
+  text-decoration: none;
+  border-radius: 10px;
+
+  &:hover {
+    background-color: $blue-light-color;
+  }
+}
+
+.ellipsis {
+  position: relative;
+  width: 90%;
+
+  &:before {
+    content: " ";
+    visibility: hidden;
+  }
+
+  p {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}

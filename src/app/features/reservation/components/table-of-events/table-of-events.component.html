@@ -1,0 +1,49 @@
+<table mat-table [dataSource]="dataSource" class="mat-elevation-z8" *ngIf="isAdmin">
+  <ng-container matColumnDef="dots">
+    <th mat-header-cell *matHeaderCellDef></th>
+    <td mat-cell *matCellDef="let element">⋮</td>
+  </ng-container>
+
+  <ng-container matColumnDef="id">
+    <th mat-header-cell *matHeaderCellDef><b>RowIndex</b></th>
+    <td mat-cell *matCellDef="let element">{{ element.id }}</td>
+  </ng-container>
+
+  <ng-container matColumnDef="title">
+    <th mat-header-cell *matHeaderCellDef><b>Title</b></th>
+    <td mat-cell *matCellDef="let element">{{ element.title }}</td>
+  </ng-container>
+
+  <ng-container matColumnDef="location">
+    <th mat-header-cell *matHeaderCellDef><b>Location</b></th>
+    <td mat-cell *matCellDef="let element">{{ element.location }}</td>
+  </ng-container>
+
+  <ng-container matColumnDef="date">
+    <th mat-header-cell *matHeaderCellDef><b>Conference Date</b></th>
+    <td mat-cell *matCellDef="let element">{{ element.date }}</td>
+  </ng-container>
+
+  <ng-container matColumnDef="currentCreation">
+    <th mat-header-cell *matHeaderCellDef><b>Date Created</b></th>
+    <td mat-cell *matCellDef="let element">{{ element.currentCreation }}</td>
+  </ng-container>
+
+  <ng-container matColumnDef="edit" >
+    <th mat-header-cell *matHeaderCellDef ><b>Edit</b></th>
+    <td mat-cell *matCellDef="let element">
+      <button mat-button *ngIf="isAdmin" (click)="onCreateReservation(element)" class='material-icons' >edit
+      </button>
+    </td>
+  </ng-container>
+
+  <ng-container matColumnDef="delete">
+    <th mat-header-cell *matHeaderCellDef><b>Delete reservation</b></th>
+    <td mat-cell *matCellDef="let element">
+      <button mat-button *ngIf="isAdmin" (click)="onDelete(element)"class='material-icons' >delete
+      </button>
+    </td>
+  </ng-container>
+  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+  <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+</table>

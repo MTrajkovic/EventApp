@@ -1,0 +1,32 @@
+.wrapper-overview {
+  position: relative;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 5px;
+  width: 60%;
+  margin: auto;
+}
+
+.main-content {
+  position: relative;
+  display: block;
+  margin: 8px;
+  background: transparent;
+  width: 100%;
+
+  img {
+    height: 42vh;
+    width: 50vh;
+    position: relative;
+    border-radius: 10px;
+  }
+}
+
+.container {
+  padding: 20px;
+  margin: 20px;
+}
+
+button {
+  margin-top: 20px;
+}

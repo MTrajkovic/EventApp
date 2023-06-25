@@ -1,0 +1,47 @@
+@import "../../../../../../styles/variables";
+.wrapper {
+  background-color: #33383f;
+  color: white;
+  position: relative;
+  display: grid;
+  border-radius: 8px;
+
+  h1 {
+    margin-left: 10px;
+    margin-bottom: 1px;
+  }
+
+  button {
+    color: white;
+    font-size: 20px;
+    padding: 7px;
+    text-decoration: none;
+    background-color: transparent;
+    border: none;
+    border-radius: 50px;
+    margin: 5px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #5274a8;
+    }
+  }
+
+  .navigation {
+    height: 52px;
+
+    .right {
+      position: absolute;
+      right: 0;
+    }
+
+    .navigation-links {
+      display: inline;
+    }
+  }
+}
+
+.material-icons {
+  color: rgb(255, 255, 255);
+  font-size: 25px;
+}

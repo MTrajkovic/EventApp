@@ -1,0 +1,67 @@
+@import "../../../../../styles/variables";
+
+.content {
+  top: 10%;
+  position: relative;
+  display: flex;
+
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+
+  input {
+    width: 100%;
+    height: 50px;
+    background-color: $blue-color;
+    color: $blue-color-input-text;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    margin: 2px;
+  }
+
+  .invalid {
+    border: 4px solid red;
+  }
+
+  h1 {
+    text-align: left;
+    font-size: 60px;
+    color: $blue-color;
+  }
+
+  button {
+    width: 100%;
+    height: 50px;
+    background-color: $blue-color;
+    color: $blue-color-input-text;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+
+    &:hover {
+      background-color: $blue-light-color;
+      color: $blue-color;
+      cursor: pointer;
+    }
+
+    &:disabled {
+      cursor: not-allowed;
+      background-color: $blue-light-color;
+      color: $blue-color;
+    }
+  }
+
+  .log-in-class {
+    background-color: transparent;
+    color: $blue-color;
+
+    &:hover {
+      color: $blue-color-hover;
+    }
+  }
+
+  p {
+    color: $blue-color;
+  }
+}

@@ -1,0 +1,137 @@
+{
+  "events": [
+    {
+      "name": "Nickelback",
+      "description": "Nickelback is coming to Footprint Center with their Get Rollin’ Tour on July 12! Presale starts Wednesday, January 25 at 10am and ends Thursday, January 26 at 10pm. Tickets go on sale to the public on Friday, January 27 at 10am local.",
+      "date": "12.07.2023 / 6:30 pm",
+      "organizer": "Jake Williamson",
+      "location": "Miami",
+      "image": "https://www.breakout.co.za/wp-content/uploads/2020/12/Event-Management-1024x576.jpg",
+      "currentCreation": "2023-05-02T10:57:08.430Z",
+      "id": 1
+    },
+    {
+      "name": "Madonna",
+      "description": "Madonna, the best-selling female solo touring artist of all time, rises to the challenge announcing The Celebration Tour which will be highlighting her unmatched catalog of music from the past 40 plus years.",
+      "date": "22.07.2023 / 8:30 pm",
+      "organizer": "Kaysen Farley",
+      "location": "Paris",
+      "currentCreation": "2023-05-02T10:57:08.430Z",
+      "image": "https://res.cloudinary.com/dwzmsvp7f/image/fetch/q_75,f_auto,w_1316/https%3A%2F%2Fmedia.insider.in%2Fimage%2Fupload%2Fc_crop%2Cg_custom%2Fv1519627962%2Fvltlogy23k1iid9pjffx.jpg",
+      "id": 2
+    },
+    {
+      "name": "Bryan Adams",
+      "description": "Famed musician and singer-songwriter Bryan Adams is bringing his 2023 So Happy It Hurts Tour, with iconic group Joan Jett and the Blackhearts, to Footprint Center on July 25!",
+      "date": "25.07.2023 / 7:30 pm",
+      "organizer": "Declan Parker",
+      "location": "Barcelona",
+      "currentCreation": "2023-05-02T10:57:08.430Z",
+      "image": "https://wwwsitecorecom.azureedge.net/-/media/sitecoresite/images/home/resources/events-and-webinars/events-gettyimages-1299624974.jpg?mw=600&md=20220106T185331Z&hash=1704B8BCD94957D35AE9AB5F353AAE3E&t=544x310",
+      "id": 3
+    },
+    {
+      "name": "Lil Baby",
+      "description": "Presented by AG Touring and Mammoth Presents, Grammy Award winning artist Lil Baby is bringing the Its Only Us Tour to Footprint Center on August 1, 2023 featuring The Kid LAROI, GloRilla, GLOSS UP, Rylo Rodriguez, and Hunxho.",
+      "date": "01.08.2023 / 6:30 pm",
+      "organizer": "John Matthews",
+      "currentCreation": "2023-05-02T10:57:08.430Z",
+      "image": "https://assets.website-files.com/5f63071eabaa43b541f60fb1/5f634a39d60f17c560cd56ff_XHP_topPic_user-acquisition.jpg",
+      "id": 4
+    },
+    {
+      "name": "Rod Stewart",
+      "description": "The Rod Stewart event at Footprint Center, originally scheduled for Friday, June 24, 2022 has been postponed and will now take place on Friday, August 4, 2023. Tickets from the original date will be honored for this new date, however, we understand circumstances may have changed.",
+      "date": "24.06.2023 / 7:40 pm",
+      "organizer": "Daniel Carr",
+      "currentCreation": "2023-05-02T10:57:08.430Z",
+      "image": "https://i.ytimg.com/vi/9Gjs83Wz19M/maxresdefault.jpg",
+      "id": 5
+    },
+    {
+      "name": "Beck & Phoenix",
+      "description": "Beck & Phoenix are joining forces for the Summer Odyssey Tour, coming to Footprint Center with Japanese Breakfast and Sir Chloe on Friday, August 11! Presale will be available Thursday, January 26 from 10am-10pm. Tickets go on sale to the public on Friday, January 27 at 10am local.",
+      "date": "24.06.2023 / 5:45 pm",
+      "organizer": "Bradley Howard",
+      "currentCreation": "2023-05-02T10:57:08.430Z",
+      "image": "https://www1.chester.ac.uk/sites/default/files/styles/hero/public/Events%20Management%20festival%20image.jpg?itok=eJ3k-5R6",
+      "id": 6
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "firstName": "Milos",
+      "lastName": "Trajkovic",
+      "email": "milos@gmail.com",
+      "password": "12345",
+      "role": "admin",
+      "currentCreation": "2023-05-02T10:57:08.430Z"
+    },
+    {
+      "id": 2,
+      "firstName": "Pera",
+      "lastName": "Peric",
+      "email": "pera@gmail.com",
+      "password": "12345",
+      "role": "user",
+      "currentCreation": "2023-05-02T10:58:01.113Z"
+    },
+    {
+      "id": 3,
+      "email": "admin@orion.com",
+      "password": "admin",
+      "role": "admin",
+      "currentCreation": "2023-05-02T10:57:08.430Z"
+    },
+    {
+      "id": 4,
+      "email": "moderator@orion.com",
+      "password": "moderator",
+      "role": "moderator",
+      "currentCreation": "2023-05-02T10:57:08.430Z"
+    }
+  ],
+  "admin": [
+    {
+      "firstName": "Milos",
+      "lastName": "Trajkovic",
+      "dateFrom": "2022-12-24",
+      "dateTo": "2023-01-06",
+      "event": 3,
+      "id": 1,
+      "deletedAt": null
+    },
+    {
+      "firstName": "Marko",
+      "lastName": "Markovic",
+      "dateFrom": "2022-12-16",
+      "dateTo": "2023-01-01",
+      "event": 4,
+      "id": 2,
+      "deletedAt": null
+    },
+    {
+      "firstName": "Niko",
+      "lastName": "Belic",
+      "dateFrom": "2023-01-19",
+      "dateTo": "2023-01-22",
+      "event": 2,
+      "id": 3,
+      "deletedAt": "2023-06-12T10:28:56.197Z"
+    }
+
+  ],
+  "links": [
+    {
+      "id": 1,
+      "name": "events",
+      "path": "events"
+    },
+    {
+      "id": 2,
+      "name": "admin",
+      "path": "admin/table"
+    }
+  ]
+}
