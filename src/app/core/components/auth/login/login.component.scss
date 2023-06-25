@@ -1,17 +1,17 @@
 @import "../../../../../styles/variables";
 
 h1 {
-  color: $blue-color;
+  color: #a1d3f5;
   font-size: 60px;
 }
 
 p {
-  color: $blue-color;
+  color: #a1d3f5;
 }
 
 .register {
   background-color: transparent;
-  color: $blue-color;
+  color: #a1d3f5;
 
   &:hover {
     color: $blue-color-hover;
@@ -33,8 +33,8 @@ p {
   input {
     width: 100%;
     height: 50px;
-    background-color: $blue-color;
-    color: $blue-color-input-text;
+    background-color: #a1d3f5;
+    color: #000000;
     border: none;
     border-radius: 5px;
     font-size: 20px;
@@ -49,8 +49,8 @@ p {
 button {
   width: 100%;
   height: 50px;
-  background-color: $blue-color;
-  color: $blue-color-input-text;
+  background-color: #a1d3f5;
+  color: #000000;
   border: none;
   border-radius: 5px;
   font-size: 20px;

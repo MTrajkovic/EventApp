@@ -1,4 +1,4 @@
-export interface Reservation {
+export interface Events {
   id: number;
   title?: string | null;
   imageUrl?: string | null;

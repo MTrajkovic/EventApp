@@ -6,7 +6,7 @@
     <div class="container">
       <button [routerLink]="['/events', event.id]">{{ event.title }}</button><br />
       <p>
-        Date: {{ event.date | date:'medium'}}
+        Date: {{ event.date | date:'dd.mm.y.hh.mm'}}
       </p>
       <p>
         Organizer: {{ event.organizatorFirstName + ' ' + event.organizatorLastName}}

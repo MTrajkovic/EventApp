@@ -8,11 +8,9 @@ const routes: Routes = [
   {
     path: '',
     component: EventsComponent,
-    canActivate: [AuthGuard],
   },
   {
     path: ':eventId',
-    canActivate: [AuthGuard],
     component: EventOverviewComponent,
   },
 ];

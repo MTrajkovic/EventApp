@@ -39,7 +39,7 @@ export class EventsComponent implements OnInit, OnDestroy {
 
   private getSearchValue(): void {
     this.eventService.searchedValue$
-      .pipe(takeUntil(this.subscription$),debounceTime(3000))
+      .pipe(takeUntil(this.subscription$), debounceTime(3000))
       .subscribe((value) => {
         this.searchedValue = value;
         this.getEventsByTitle();

@@ -7,7 +7,6 @@ export class AdminDirective {
   numberOfChar: number | undefined;
 
   constructor(private element: ElementRef) {
-    console.log('admin directive')
   }
 
 

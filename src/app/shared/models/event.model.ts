@@ -5,5 +5,6 @@ export interface Event {
   organizatorLastName: string;
   description: string;
   imageUrl: string;
-  date: string;
+  date?: string;
+  conferenceDate: string;
 }

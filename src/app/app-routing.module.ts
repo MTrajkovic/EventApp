@@ -6,11 +6,11 @@ import { ShellLayoutComponent } from './core/components/shell/components/shell-l
 import { AuthGuard } from './core/guards/auth.guard';
 import { RegistrationComponent } from './core/components/auth/registration/registration.component';
 import { EventsComponent } from './features/events/components/events/events.component';
+import { AdminGuard } from './core/guards/admin.guard';
 
 const routes: Routes = [
   {
     path: '',
-    canActivate: [AuthGuard],
     component: ShellLayoutComponent,
     children: [
       {
@@ -20,7 +20,6 @@ const routes: Routes = [
       },
       {
         path: 'events',
-        canLoad: [AuthGuard],
         loadChildren: () =>
           import('./features/events/events.module').then(
             (module) => module.EventsModule
@@ -28,10 +27,10 @@ const routes: Routes = [
       },
       {
         path: 'admin',
-        canLoad: [AuthGuard],
+        canLoad: [AdminGuard],
         loadChildren: () =>
-          import('./features/reservation/reservation.module').then(
-            (module) => module.ReservationModule
+          import('./features/event/event.module').then(
+            (module) => module.EventModule
           ),
       },
     ],

@@ -2,12 +2,13 @@
   <h1>Event Planner</h1>
   <div class="navigation">
     <div class="navigation-links" *ngFor="let link of links">
+
       <button [routerLinkActive]="['active']" [routerLink]="[link.path]">
         <span>{{ link.name }}</span>
       </button>
     </div>
 
-    <button class="right"  *ngIf="isAdmin"(click)="logoutUser()" matTooltip="Logout">
+    <button class="right" *ngIf="isLoggedIn" (click)="logoutUser()" matTooltip="Logout">
       <mat-icon>logout</mat-icon>
     </button>
   </div>

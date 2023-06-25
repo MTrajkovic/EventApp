@@ -5,11 +5,8 @@ import { NotFoundComponent } from './components/not-found/not-found.component';
 import { SearchComponent } from './components/search/search.component';
 import { MaterialModule } from './material/material.module';
 
-const PIPES = [DescriptionLimitPipe,];
-const COMPONENTS = [
-  NotFoundComponent,
-  SearchComponent,
-];
+const PIPES = [DescriptionLimitPipe];
+const COMPONENTS = [NotFoundComponent, SearchComponent];
 
 @NgModule({
   declarations: [...PIPES, ...COMPONENTS],

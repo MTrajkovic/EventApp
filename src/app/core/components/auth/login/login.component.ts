@@ -55,10 +55,14 @@ export class LoginComponent implements OnInit {
 
           this.route.navigateByUrl('');
         } else {
-          this._snackBar.open('Your email or password are incorrect.', 'Close', {
-            horizontalPosition: 'center',
-            verticalPosition: 'top',
-          });
+          this._snackBar.open(
+            'Your email or password are incorrect.',
+            'Close',
+            {
+              horizontalPosition: 'center',
+              verticalPosition: 'top',
+            }
+          );
         }
       });
   }

@@ -6,11 +6,9 @@
       "date": "2023-07-12T18:30:03.230Z",
       "organizatorFirstName": "Jake",
       "organizatorLastName": "Williamson",
-      "location": "Miami",
       "imageUrl": "https://www.breakout.co.za/wp-content/uploads/2020/12/Event-Management-1024x576.jpg",
-      "currentCreation": "2023-06-14T10:57:08.430Z",
-      "id": 1,
-      "deletedAt": "2023-06-21T10:23:56.847Z"
+      "conferenceDate": "2023-06-14T10:57:08.430Z",
+      "id": 1
     },
     {
       "title": "Madonna",
@@ -18,11 +16,9 @@
       "date": "2023-07-22T20:30:03.230Z",
       "organizatorFirstName": "Kaysen",
       "organizatorLastName": "Farley",
-      "location": "Paris",
-      "currentCreation": "2023-06-14T10:57:08.430Z",
-      "imageUrl": "https://res.cloudinary.com/dwzmsvp7f/image/fetch/q_75,f_auto,w_1316/https%3A%2F%2Fmedia.insider.in%2Fimage%2Fupload%2Fc_crop%2Cg_custom%2Fv1519627962%2Fvltlogy23k1iid9pjffx.jpg",
-      "id": 2,
-      "deletedAt": "2023-06-21T10:23:57.099Z"
+      "conferenceDate": "2023-06-14T10:57:08.430Z",
+      "imageUrl": "https://ichef.bbci.co.uk/news/1024/cpsprodpb/4BF0/production/_97804491_ef6dbed4-9dd5-4bbd-8248-84e89ce2286c.jpg",
+      "id": 2
     },
     {
       "title": "Bryan Adams",
@@ -30,8 +26,7 @@
       "date": "2023-07-25T19:30:03.230Z",
       "organizatorFirstName": "Declan",
       "organizatorLastName": "Parker",
-      "location": "Barcelona",
-      "currentCreation": "2023-06-14T10:57:08.430Z",
+      "conferenceDate": "2023-06-14T10:57:08.430Z",
       "imageUrl": "https://wwwsitecorecom.azureedge.net/-/media/sitecoresite/images/home/resources/events-and-webinars/events-gettyimages-1299624974.jpg?mw=600&md=20220106T185331Z&hash=1704B8BCD94957D35AE9AB5F353AAE3E&t=544x310",
       "id": 3
     },
@@ -41,8 +36,7 @@
       "date": "2023-08-01T18:30:03.230Z",
       "organizatorFirstName": "John",
       "organizatorLastName": "Matthews",
-      "location": "Russia",
-      "currentCreation": "2023-06-14T10:57:08.430Z",
+      "conferenceDate": "2023-06-14T10:57:08.430Z",
       "imageUrl": "https://assets.website-files.com/5f63071eabaa43b541f60fb1/5f634a39d60f17c560cd56ff_XHP_topPic_user-acquisition.jpg",
       "id": 4
     },
@@ -52,11 +46,9 @@
       "date": "2023-06-24T19:40:03.230Z",
       "organizatorFirstName": "Daniel",
       "organizatorLastName": "Carr",
-      "location": "Florida",
-      "currentCreation": "2023-06-14T10:57:08.430Z",
-      "imageUrl": "https://i.ytimg.com/vi/9Gjs83Wz19M/maxresdefault.jpg",
-      "id": 5,
-      "deletedAt": "2023-06-21T10:23:56.121Z"
+      "conferenceDate": "2023-06-14T10:57:08.430Z",
+      "imageUrl": "https://www.itfc.co.uk/siteassets/image/misc/rod-2-1600.jpg/Large",
+      "id": 5
     },
     {
       "title": "Beck & Phoenix",
@@ -64,31 +56,9 @@
       "date": "2023-06-24T17:45:03.230Z",
       "organizatorFirstName": "Bradley",
       "organizatorLastName": "Howard",
-      "location": "India",
-      "currentCreation": "2023-06-14T10:57:08.430Z",
+      "conferenceDate": "2023-06-14T10:57:08.430Z",
       "imageUrl": "https://www1.chester.ac.uk/sites/default/files/styles/hero/public/Events%20Management%20festival%20image.jpg?itok=eJ3k-5R6",
-      "id": 6,
-      "deletedAt": "2023-06-21T10:27:53.973Z"
-    },
-    {
-      "id": 7,
-      "title": "Milos",
-      "imageUrl": "https://www1.chester.ac.uk/sites/default/files/styles/hero/public/Events%20Management%20festival%20image.jpg?itok=eJ3k-5R6",
-      "organizatorLastName": "Trajkovic",
-      "description": "Milos je najbolji covek ",
-      "organizatorFirstName": "Milos",
-      "conferenceDate": "2023-06-10",
-      "deletedAt": null
-    },
-    {
-      "id": 8,
-      "title": "Milos 2",
-      "imageUrl": "https://images.pexels.com/photos/2486168/pexels-photo-2486168.jpeg?cs=srgb&dl=pexels-roberto-nickson-2486168.jpg&fm=jpg",
-      "organizatorLastName": "Trajkovic",
-      "description": "124142",
-      "organizatorFirstName": "Milos",
-      "conferenceDate": "2023-06-16",
-      "deletedAt": null
+      "id": 6
     }
   ],
   "users": [
@@ -132,6 +102,15 @@
       "password": "12345",
       "role": "user",
       "currentCreation": "2023-06-24T23:25:31.380Z"
+    },
+    {
+      "id": 6,
+      "firstName": "Milos",
+      "lastName": "Trajkovicccccc",
+      "email": "milos2313@gmail.com",
+      "password": "miki",
+      "role": "user",
+      "currentCreation": "2023-06-25T21:49:46.801Z"
     }
   ],
   "links": [
@@ -142,7 +121,7 @@
     },
     {
       "id": 2,
-      "name": "Admin ",
+      "name": "Admin",
       "path": "admin/table"
     },
     {

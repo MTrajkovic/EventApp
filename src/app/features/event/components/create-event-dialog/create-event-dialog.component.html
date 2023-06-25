@@ -1,0 +1,55 @@
+<div class="dialog">
+  <h2 mat-dialog-title>{{data.id ? 'Edit Conference': 'Create Conference'}}</h2>
+  <mat-dialog-content class="mat-typography">
+    <form class="content" [formGroup]="conferenceForm">
+      <div>
+        <br />
+        <div class="group">
+          <input type="text" placeholder="Title" name="title" formControlName="title"
+            [ngClass]="{'invalid' : conferenceForm.controls.title.errors?.['pattern']}" />
+        </div>
+        <br />
+        <div class="group">
+          <input type="text" placeholder="Image url" name="image-url" formControlName="imageUrl"
+            [ngClass]="{'invalid' : conferenceForm.controls.imageUrl.errors?.['pattern']}" />
+        </div>
+        <br />
+        <div class="group">
+          <input appAdmin required="" formControlName="description" type="text" placeholder="Description"
+            name="description" />
+        </div>
+        <br />
+        <div class="group">
+          <input type="text" placeholder="Organizator First name" name="Organizator First name"
+            formControlName="organizatorFirstName"
+            [ngClass]="{'invalid' : conferenceForm.controls.organizatorFirstName.errors?.['pattern']}" />
+          <p *ngIf="conferenceForm.controls.organizatorFirstName.errors?.['pattern']">
+            First letter is required and first letter must bi capital
+          </p>
+        </div>
+        <br />
+        <div class="group">
+          <input type="text" placeholder="Organizator Last name" name="Organizator Last name"
+            formControlName="organizatorLastName"
+            [ngClass]="{'invalid' : conferenceForm.controls.organizatorLastName.errors?.['pattern']}" />
+          <p *ngIf="conferenceForm.controls.organizatorLastName.errors?.['pattern']">
+            First letter is required and first letter must bi capital
+          </p>
+        </div>
+        <br />
+        <div class="group">
+          <input type="date" placeholder="Conference Date" name="Conference Date" formControlName="conferenceDate" />
+        </div>
+        <br />
+        <br />
+        <br />
+      </div>
+    </form>
+  </mat-dialog-content>
+  <mat-dialog-actions align="left">
+    <button mat-button mat-dialog-close [disabled]="conferenceForm.invalid" (click)="saveEvent()">
+      {{data.id ? 'Update': 'Create'}}
+    </button>
+    <button mat-button mat-dialog-close>Close</button>
+  </mat-dialog-actions>
+</div>

@@ -26,4 +26,8 @@ export class AuthorizationService {
     return localStorage.getItem('Role') === Role.Admin;
   }
 
+  isLogedIn(): boolean {
+    const userData = localStorage.getItem('User');
+    return userData !== null;
+  }
 }

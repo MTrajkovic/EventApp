@@ -13,6 +13,7 @@ import { Link } from 'src/app/shared/models/link.model';
 export class HeaderComponent implements OnInit {
   isAdmin: boolean = false;
   links?: Link[];
+  isLoggedIn: boolean = false;
 
   constructor(
     private route: Router,
@@ -22,6 +23,7 @@ export class HeaderComponent implements OnInit {
 
   ngOnInit(): void {
     this.isAdmin = this.AuthorizationService.isAdmin();
+    this.isLoggedIn = this.AuthorizationService.isLogedIn();
     this.getAllLinks();
   }
 
@@ -35,7 +37,21 @@ export class HeaderComponent implements OnInit {
     this.navigationService
       .getAll()
       .pipe(take(1))
-      .subscribe((links) => (this.links = links));
+      .subscribe((links) => {
+        const displayLinks = [];
+        for (let link of links) {
+          if (link.name == 'Events') {
+            displayLinks.push(link);
+          }
+          if (link.name == 'Admin' && this.isAdmin) {
+            displayLinks.push(link);
+          }
+          if (link.name == 'Login' && !this.AuthorizationService.isLogedIn()) {
+            displayLinks.push(link);
+          }
+        }
+        this.links = displayLinks;
+      });
   }
   onClick() {
     this.isAdmin = !this.isAdmin;
