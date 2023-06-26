@@ -45,6 +45,7 @@ export class CreateEventDialogComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
+    if (this.data.id){
     this.eventService.getEventByID(this.data.id).subscribe((event) => {
       const conferenceDate = event.date.substring(0, 10);
       this.conferenceForm.patchValue({
@@ -55,14 +56,14 @@ export class CreateEventDialogComponent implements OnInit {
         organizatorLastName: event.organizatorLastName,
         conferenceDate: conferenceDate,
       });
-    });
+    }) ;   }
     this.getLastRegistrationID();
     this.conferenceForm.patchValue(this.data);
   }
 
   saveEvent(): void {
     const event: Event = {
-      id: this.registrationID,
+      id: this.data.id,
       title: this.conferenceForm.value.title,
       imageUrl: this.conferenceForm.value.imageUrl,
       organizatorLastName: this.conferenceForm.value.organizatorLastName,
@@ -77,6 +78,32 @@ export class CreateEventDialogComponent implements OnInit {
       .pipe(take(1))
       .subscribe(() => {
         this._snackBar.open('Event create successfuly', 'Close', {
+          horizontalPosition: 'center',
+          verticalPosition: 'top',
+          duration: 2000,
+        });
+
+        this.conferenceService.madeReservation$.next(true);
+      });
+  }
+
+  updateEvent(): void {
+    const event: Event = {
+      id: this.data.id,
+      title: this.conferenceForm.value.title,
+      imageUrl: this.conferenceForm.value.imageUrl,
+      organizatorLastName: this.conferenceForm.value.organizatorLastName,
+      description: this.conferenceForm.value.description,
+      organizatorFirstName: this.conferenceForm.value.organizatorFirstName,
+      conferenceDate: this.conferenceForm.value.conferenceDate,
+      date: new Date().toISOString(),
+    };
+
+    this.conferenceService
+      .updateEvent(event)
+      .pipe(take(1))
+      .subscribe(() => {
+        this._snackBar.open('Event update successfuly', 'Close', {
           horizontalPosition: 'center',
           verticalPosition: 'top',
           duration: 2000,

@@ -47,7 +47,7 @@
     </form>
   </mat-dialog-content>
   <mat-dialog-actions align="left">
-    <button mat-button mat-dialog-close [disabled]="conferenceForm.invalid" (click)="saveEvent()">
+    <button mat-button mat-dialog-close [disabled]="conferenceForm.invalid" (click)="data.id? updateEvent() : saveEvent()">
       {{data.id ? 'Update': 'Create'}}
     </button>
     <button mat-button mat-dialog-close>Close</button>

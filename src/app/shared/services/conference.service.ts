@@ -27,4 +27,8 @@ export class ConferenceService {
   createEvent(event: Event): Observable<Object> {
     return this.http.post(`${environment.baseApiURL}events`, event);
   }
+
+ updateEvent(event: Event): Observable<Object> {
+    return this.http.put(`${environment.baseApiURL}events/${event.id}`, event);
+  }
 }

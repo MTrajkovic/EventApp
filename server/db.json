@@ -1,14 +1,14 @@
 {
   "events": [
     {
-      "title": "Nickelback",
-      "description": "Nickelback is coming to Footprint Center with their Get Rollin’ Tour on July 12! Presale starts Wednesday, January 25 at 10am and ends Thursday, January 26 at 10pm. Tickets go on sale to the public on Friday, January 27 at 10am local.",
-      "date": "2023-07-12T18:30:03.230Z",
-      "organizatorFirstName": "Jake",
-      "organizatorLastName": "Williamson",
+      "id": 1,
+      "title": "Nickelback3",
       "imageUrl": "https://www.breakout.co.za/wp-content/uploads/2020/12/Event-Management-1024x576.jpg",
-      "conferenceDate": "2023-06-14T10:57:08.430Z",
-      "id": 1
+      "organizatorLastName": "Williamson",
+      "description": "Nickelback is coming to Footprint Center with their Get Rollin’ Tour on July 12! Presale starts Wednesday, January 25 at 10am and ends Thursday, January 26 at 10pm. Tickets go on sale to the public on Friday, January 27 at 10am local.",
+      "organizatorFirstName": "Jake",
+      "conferenceDate": "2023-07-12",
+      "date": "2023-06-26T06:49:02.419Z"
     },
     {
       "title": "Madonna",
@@ -59,6 +59,16 @@
       "conferenceDate": "2023-06-14T10:57:08.430Z",
       "imageUrl": "https://www1.chester.ac.uk/sites/default/files/styles/hero/public/Events%20Management%20festival%20image.jpg?itok=eJ3k-5R6",
       "id": 6
+    },
+    {
+      "id": 7,
+      "title": "Milos",
+      "imageUrl": "https://www.breakout.co.za/wp-content/uploads/2020/12/Event-Management-1024x576.jpg",
+      "organizatorLastName": "Trajkovic",
+      "description": "123",
+      "organizatorFirstName": "Milos",
+      "conferenceDate": "2023-06-03",
+      "date": "2023-06-26T06:45:00.127Z"
     }
   ],
   "users": [
